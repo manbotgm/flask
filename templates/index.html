@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrando o HTML ao Flask</title>
-</head>
-<body>
-    <h2>Integração do HTML ao FLASK</h2>
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h2 style="text-align: center;">Integração do HTML ao FLASK</h2>
+    <hr>
     <ol>
     {% for i in frutas %}
         <li>{{i}}</li>
@@ -17,9 +11,6 @@
         <input type="text", name="fruta">
         <button>Adicionar</button>
     </form>
-
 </ol>
+{% endblock conteudo %}
 
-
-</body>
-</html>
